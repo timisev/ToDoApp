@@ -1,0 +1,16 @@
+﻿@model ToDo
+
+<form action="Edit" method="post">
+    <input type="hidden" asp-action="Id" />
+    <div>
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control">
+    </div>
+    <div>
+        <label asp-for="Text" class="form-label">Text</label>
+        <textarea asp-for="Text" class="form-control"></textarea>
+    </div>
+    <div class="accordion-button">
+        <button class="btn btn-primary" type="submit">Save</button>
+    </div>
+</form>
